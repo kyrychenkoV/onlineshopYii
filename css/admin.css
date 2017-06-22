@@ -1,0 +1,76 @@
+body{
+
+    background-color: darkgrey;
+}
+h1{
+    color:red;
+}
+body{
+    background-color:#d0d2d0;
+}
+footer{
+    background-color: #9B859D;
+    padding:17px 0 18px 0 ;
+}
+.header{
+    background-color: #9B859D;
+}
+.wrapper{
+    min-height: 100%;
+}
+html,body{
+    height: 100%;
+}
+
+
+.product{
+    text-align: left;
+    padding-left:30px;
+    padding-bottom: 10px;
+}
+.info{
+    padding-left:20px;
+}
+.wrapper-post{
+    margin-left: 10%;
+    width: 60%;
+    padding: 10px;
+}
+.image{
+    width:250px;
+    height:220px;
+    float:left;
+    margin: 0px 20px 10px 0;
+}
+.name{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    color:#23527c;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    color:#23527c;
+    text-align: center;
+}
+.left-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    color:#23527c;
+
+
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+.line{
+    margin-top:11px;
+}
+.title-group{
+    text-align: center;
+    color:#23527c;
+}
+
+
+
