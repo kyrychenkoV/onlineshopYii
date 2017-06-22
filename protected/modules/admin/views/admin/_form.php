@@ -16,7 +16,7 @@
     'htmlOptions'=>array('enctype'=>'multipart/form-data'),
 //    'gender'=>array(
 //        'type'=>'dropdownlist',
-//        'items'=>Post::getGenderOptions(),
+//        'items'=>array(1=>'test1', 2=>'test2'),
 //        'prompt'=>'Выберите значение:',
 //    ),
 )); ?>
@@ -24,7 +24,6 @@
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'title'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>255)); ?>
@@ -39,11 +38,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'id_lists'); ?>
-<!--        --><?php //echo $form->textField($model,'id_lists'); ?>
-        <?php echo $form->dropDownList($model,'id_lists',Post::getGenderOptions()); ?>
+
+        <?php echo $form->dropDownList($model,'id_lists',array(5=>'test1', 9=>'test2')); ?>
 		<?php echo $form->error($model,'id_lists'); ?>
 	</div>
-
 	<div class="row">
         <?php echo $form->labelEx($model,'image'); ?>
         <?php echo $form->fileField($model,'image'); ?>

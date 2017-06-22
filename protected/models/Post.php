@@ -51,6 +51,8 @@ class Post extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+            'list'=>array(self::BELONGS_TO, 'Lists', 'id_lists'),
+
 		);
 	}
 
@@ -111,7 +113,7 @@ class Post extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-    public static function getGenderOptions()
+    public static function getLists()
     {
 
         return array(
