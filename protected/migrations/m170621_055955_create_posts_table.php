@@ -23,14 +23,4 @@ class m170621_055955_create_posts_table extends CDbMigration
         $this->dropTable('tbl_posts');
 	}
 
-	/*
-	// Use safeUp/safeDown to do migration with transaction
-	public function safeUp()
-	{
-	}
-
-	public function safeDown()
-	{
-	}
-	*/
 }

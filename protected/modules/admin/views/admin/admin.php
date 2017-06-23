@@ -38,7 +38,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
 )); ?>
-</div><!-- search-form -->
+</div>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'post-grid',
@@ -51,9 +51,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'id_lists',
 		'image',
 		'date_create',
-		/*
-		'last_status_change',
-		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

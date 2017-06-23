@@ -19,14 +19,4 @@ class m170621_043121_create_list_table extends CDbMigration
 
 	}
 
-	/*
-	// Use safeUp/safeDown to do migration with transaction
-	public function safeUp()
-	{
-	}
-
-	public function safeDown()
-	{
-	}
-	*/
 }
