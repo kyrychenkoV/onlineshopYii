@@ -39,26 +39,26 @@ $('.search-form form').submit(function(){
         'model'=>$model,
     )); ?>
 </div><!-- search-form -->
-
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-    'id'=>'post-grid',
-    'dataProvider'=>$model->search(),
-    'filter'=>$model,
-    'columns'=>array(
-        'id',
-        'title',
-        'text',
-        'id_lists',
-        'image',
-        'date_create',
-        /*
-        'last_status_change',
-        */
-        array(
-            'class'=>'CButtonColumn',
-        ),
-    ),
-)); ?>
+<!---->
+<?php //$this->widget('zii.widgets.grid.CGridView', array(
+//    'id'=>'post-grid',
+//    'dataProvider'=>$model->search(),
+//    'filter'=>$model,
+//    'columns'=>array(
+//        'id',
+//        'title',
+//        'text',
+//        'id_lists',
+//        'image',
+//        'date_create',
+//        /*
+//        'last_status_change',
+//        */
+//        array(
+//            'class'=>'CButtonColumn',
+//        ),
+//    ),
+//)); ?>
 
 <?php $this->widget('zii.widgets.CListView', array(
     'dataProvider'=>$dataProvider,
