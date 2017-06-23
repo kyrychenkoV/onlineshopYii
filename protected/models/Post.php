@@ -3,7 +3,7 @@
 
 class Post extends CActiveRecord
 {
-
+    const PATH_TO_IMAGE= './images/';
 	public function tableName()
 	{
 		return '{{posts}}';

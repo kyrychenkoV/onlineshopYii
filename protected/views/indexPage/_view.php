@@ -9,7 +9,7 @@
             <div class="row">
 
                 <div class="col-lg-12">
-                    <?php echo CHtml::image('./images/'.$data->image,'image',['width'=>'100px','height'=>'100px'])?>
+                    <?php echo CHtml::image(POST::PATH_TO_IMAGE.$data->image,'image',['width'=>'100px','height'=>'100px'])?>
                     <br />
                     <b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
                     <?php echo CHtml::encode($data->title); ?>

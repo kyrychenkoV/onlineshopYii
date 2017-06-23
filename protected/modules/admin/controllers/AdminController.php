@@ -4,7 +4,7 @@ class AdminController extends Controller
 {
 
     public $layout = '//layouts/column2';
-    const PATH_IMAGE= '/images/';
+
 
 
     public function filters()
@@ -53,7 +53,7 @@ class AdminController extends Controller
             $model->attributes = $_POST['Post'];
             $model->image = CUploadedFile::getInstance($model, 'image');
             if ($model->save()) {
-                $path = Yii::getPathOfAlias('webroot') .self::PATH_IMAGE. $model->image->getName();
+                $path = Yii::getPathOfAlias('webroot') .POST::PATH_TO_IMAGE. $model->image->getName();
             };
             $model->image->saveAs($path);
             $this->redirect(['view', 'id' => $model->id]);

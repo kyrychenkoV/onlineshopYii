@@ -28,7 +28,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_lists'); ?>
-		<?php echo $form->textField($model,'id_lists'); ?>
+        <?php echo $form->dropDownList($model,'id_lists',Lists::getNameLists()); ?>
 	</div>
 
 	<div class="row">
