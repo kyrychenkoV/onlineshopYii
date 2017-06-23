@@ -30,9 +30,9 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, image,', 'required'),
+			array('id_lists,text', 'required'),
 			array('id_lists', 'numerical', 'integerOnly'=>true),
-////			array('title, image', 'length', 'max'=>255),
+			array('title, image', 'length', 'max'=>255),
 			array('text, last_status_change', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -113,12 +113,5 @@ class Post extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-    public static function getLists()
-    {
 
-        return array(
-            0 => 'Мужчина',
-            1 => 'Женщина',
-        );
-    }
 }

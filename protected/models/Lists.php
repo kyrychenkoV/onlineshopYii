@@ -98,4 +98,9 @@ class Lists extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	public static function getNameLists(){
+//        $test=CHtml::listData(Lists::model()->findAll(array('order' => 'name')), 'id', 'name'),array('empty' => 'Оберіть категорію');
+         $test=CHtml::listData(Lists::model()->findAll(array('order' => 'name','empty' => 'Оберіть категорію')), 'id', 'name');
+	    return  $test;
+    }
 }

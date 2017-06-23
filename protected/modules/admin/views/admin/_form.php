@@ -39,7 +39,8 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'id_lists'); ?>
 
-        <?php echo $form->dropDownList($model,'id_lists',array(5=>'test1', 9=>'test2')); ?>
+        <?php echo $form->dropDownList($model,'id_lists',Lists::getNameLists()); ?>
+
 		<?php echo $form->error($model,'id_lists'); ?>
 	</div>
 	<div class="row">
@@ -48,11 +49,11 @@
 		<?php echo $form->error($model,'image'); ?>
 	</div>
 
-<!--	<div class="row">-->
-<!--		--><?php //echo $form->labelEx($model,'date_create'); ?>
-<!--		--><?php //echo $form->textField($model,'date_create'); ?>
-<!--		--><?php //echo $form->error($model,'date_create'); ?>
-<!--	</div>-->
+	<div class="row">
+		<?php echo $form->labelEx($model,'date_create'); ?>
+		<?php echo $form->textField($model,'date_create'); ?>
+		<?php echo $form->error($model,'date_create'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'last_status_change'); ?>

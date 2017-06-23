@@ -4,7 +4,7 @@
 ?>
 
 <div class="view">
-    <?php var_dump($form); exit;?>
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />
@@ -24,7 +24,7 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
 	<?php echo CHtml::encode($data->image); ?>
-    <?php echo CHtml::image('./images/'.$data->image)?>
+    <?php echo CHtml::image('./images/'.$data->image,'image',['width'=>'100px','height'=>'100px'])?>
 
     <br />
 

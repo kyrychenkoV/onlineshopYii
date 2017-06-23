@@ -67,7 +67,7 @@ class AdminController extends Controller
 //            var_dump($_POST['Post']);
 //            exit;
         // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+//         $this->performAjaxValidation($model);
 
 
         if (isset($_POST['Post'])) {
@@ -82,7 +82,9 @@ class AdminController extends Controller
                 $path = Yii::getPathOfAlias('webroot') . '/images/' . $model->image->getName();
             }
 
-            $this->nameImage = 'picture_' . $model->id;
+//            $this->nameImage = 'picture_' . $model->id;
+//            echo($path);
+//            exit;
             $model->image->saveAs($path);
             $this->redirect(['view', 'id' => $model->id]);
         }
