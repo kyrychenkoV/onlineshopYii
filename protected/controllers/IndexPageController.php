@@ -67,8 +67,9 @@ class IndexPageController extends Controller
         if (isset($_GET['Post'])) {
             $model->attributes = $_GET['Post'];
         }
-
+        $dataProvider = new CActiveDataProvider('Post');
         $this->render('indexPage', [
+            'dataProvider' => $model->search(),
             'model' => $model,
         ]);
     }

@@ -59,3 +59,16 @@ $('.search-form form').submit(function(){
         ),
     ),
 )); ?>
+
+<?php $this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$dataProvider,
+    'itemView'=>'_view1',
+    'sortableAttributes'=>array(
+        'title',
+        'id',
+        'create_time'=>'Post Time',
+    ),
+
+
+));
+?>
