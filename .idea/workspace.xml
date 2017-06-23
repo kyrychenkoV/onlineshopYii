@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e834845-44ba-4ece-a145-0e3a75bcdec5" name="Default" comment="1">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/controllers/Admin/admin/IndexAction.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/default/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/layouts/new.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/views/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/views/indexPage/indexPage.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/IndexPageController.php" afterPath="$PROJECT_DIR$/protected/controllers/IndexPageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/migrations/m170621_043121_create_list_table.php" afterPath="$PROJECT_DIR$/protected/migrations/m170621_043121_create_list_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/migrations/m170621_055955_create_posts_table.php" afterPath="$PROJECT_DIR$/protected/migrations/m170621_055955_create_posts_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Lists.php" afterPath="$PROJECT_DIR$/protected/models/Lists.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Post.php" afterPath="$PROJECT_DIR$/protected/models/Post.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/AdminController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/admin/_form.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/admin/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/admin/_search.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/admin/_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/admin/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/admin/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/indexPage/_search.php" afterPath="$PROJECT_DIR$/protected/views/indexPage/_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/indexPage/index.php" afterPath="$PROJECT_DIR$/protected/views/indexPage/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/contact.php" afterPath="$PROJECT_DIR$/protected/views/site/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/pages/about.php" afterPath="$PROJECT_DIR$/protected/views/site/pages/about.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/protected/views/indexPage/_view1.php" afterPath="$PROJECT_DIR$/protected/views/indexPage/_view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,8 +51,8 @@
       <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -727,7 +706,7 @@
       <workItem from="1498058811915" duration="1300000" />
       <workItem from="1498102961640" duration="4041000" />
       <workItem from="1498110217301" duration="36574000" />
-      <workItem from="1498193013221" duration="25182000" />
+      <workItem from="1498193013221" duration="25711000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1498059905323</created>
@@ -740,7 +719,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136180000" />
+    <option name="totallyTimeSpent" value="136709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -753,7 +732,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37121212" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25108224" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1211,8 +1190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding />
         </state>
       </provider>
