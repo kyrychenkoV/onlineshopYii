@@ -24,7 +24,7 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
 	<?php echo CHtml::encode($data->image); ?>
-    <?php echo CHtml::image(POST::PATH_TO_IMAGE.$data->image,'image',['width'=>'100px','height'=>'100px'])?>
+    <?php echo CHtml::image(Post::PATH_TO_IMAGE.$data->image,'image',['width'=>'100px','height'=>'100px'])?>
 
     <br />
 

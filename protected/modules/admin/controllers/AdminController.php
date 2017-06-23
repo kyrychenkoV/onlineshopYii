@@ -53,7 +53,7 @@ class AdminController extends Controller
             $model->attributes = $_POST['Post'];
             $model->image = CUploadedFile::getInstance($model, 'image');
             if ($model->save()) {
-                $path = Yii::getPathOfAlias('webroot') .POST::PATH_TO_IMAGE. $model->image->getName();
+                $path = Yii::getPathOfAlias('webroot').'/'.Post::PATH_TO_IMAGE. $model->image->getName();
             };
             $model->image->saveAs($path);
             $this->redirect(['view', 'id' => $model->id]);
@@ -67,9 +67,6 @@ class AdminController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->loadModel($id);
-
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
 
         if (isset($_POST['Post'])) {
             $model->attributes = $_POST['Post'];
