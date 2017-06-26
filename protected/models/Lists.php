@@ -11,7 +11,7 @@ class Lists extends CActiveRecord
     public function rules()
     {
         return [
-            ['name, date_create', 'required'],
+            ['name', 'required'],
             ['name', 'length', 'max' => 255],
             ['id, name, date_create', 'safe', 'on' => 'search'],
         ];

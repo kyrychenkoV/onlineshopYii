@@ -17,7 +17,7 @@
 	</div>
 	<div class="row">
 		<?php echo $form->label($model,'id_lists'); ?>
-        <?php echo $form->dropDownList($model,'id_lists',Lists::getNameLists()); ?>
+        <?php echo $form->dropDownList($model,'id_lists',Lists::getNameLists(),array('empty' => '(Select a list)')); ?>
 
 	</div>
 

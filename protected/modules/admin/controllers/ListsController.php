@@ -1,6 +1,6 @@
 <?php
 
-class AdminController extends Controller
+class ListsController extends Controller
 {
 
     public $layout = '//layouts/column2';
@@ -9,8 +9,8 @@ class AdminController extends Controller
     public function filters()
     {
         return [
-            'accessControl', // perform access control for CRUD operations
-            'postOnly + delete', // we only allow deletion via POST request
+            'accessControl',
+            'postOnly + delete',
         ];
     }
 
@@ -18,19 +18,19 @@ class AdminController extends Controller
     public function accessRules()
     {
         return [
-            ['allow',  // allow all users to perform 'index' and 'view' actions
+            ['allow',
                 'actions' => ['index', 'view'],
                 'users'   => ['*'],
             ],
-            ['allow', // allow authenticated user to perform 'create' and 'update' actions
+            ['allow',
                 'actions' => ['create', 'update'],
                 'users'   => ['@'],
             ],
-            ['allow', // allow admin user to perform 'admin' and 'delete' actions
+            ['allow',
                 'actions' => ['admin', 'delete'],
                 'users'   => ['admin'],
             ],
-            ['deny',  // deny all users
+            ['deny',
                 'users' => ['*'],
             ],
         ];
@@ -44,18 +44,18 @@ class AdminController extends Controller
         ]);
     }
 
+
     public function actionCreate()
     {
-        $model = new Post;
-        if (isset($_POST['Post'])) {
-            $model->attributes = $_POST['Post'];
-            $model->image = CUploadedFile::getInstance($model, 'image');
+        $model = new Lists;
+
+        if (isset($_POST['Lists'])) {
+            $model->attributes = $_POST['Lists'];
             if ($model->save()) {
-                $path = $model->getPathToImage($model->image->getName());
-                $model->image->saveAs($path);
                 $this->redirect(['view', 'id' => $model->id]);
-            };
+            }
         }
+
         $this->render('create', [
             'model' => $model,
         ]);
@@ -65,36 +65,35 @@ class AdminController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->loadModel($id);
-        $image = $model->image;
 
-        if (Yii::app()->request->isPostRequest) {
 
-            $model->attributes = $_POST['Post'];
-            $model->image = CUploadedFile::getInstance($model, 'image');
+        if (isset($_POST['Lists'])) {
+            $model->attributes = $_POST['Lists'];
             if ($model->save()) {
-                $pathImage = $model->getPathToImage($model->image->getName());
-                $model->image->saveAs($pathImage);
-                $model->deleteOldImage($image);
-
                 $this->redirect(['view', 'id' => $model->id]);
             }
         }
+
         $this->render('update', [
             'model' => $model,
         ]);
     }
 
+
     public function actionDelete($id)
     {
         $this->loadModel($id)->delete();
+
+
         if (!isset($_GET['ajax'])) {
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : ['admin']);
         }
     }
 
+
     public function actionIndex()
     {
-        $dataProvider = new CActiveDataProvider('Post');
+        $dataProvider = new CActiveDataProvider('Lists');
         $this->render('index', [
             'dataProvider' => $dataProvider,
         ]);
@@ -102,10 +101,10 @@ class AdminController extends Controller
 
     public function actionAdmin()
     {
-        $model = new Post('search');
+        $model = new Lists('search');
         $model->unsetAttributes();
-        if (isset($_GET['Post'])) {
-            $model->attributes = $_GET['Post'];
+        if (isset($_GET['Lists'])) {
+            $model->attributes = $_GET['Lists'];
         }
 
         $this->render('admin', [
@@ -113,9 +112,10 @@ class AdminController extends Controller
         ]);
     }
 
+
     public function loadModel($id)
     {
-        $model = Post::model()->findByPk($id);
+        $model = Lists::model()->findByPk($id);
         if ($model === null) {
             throw new CHttpException(404, 'The requested page does not exist.');
         }
@@ -125,7 +125,7 @@ class AdminController extends Controller
 
     protected function performAjaxValidation($model)
     {
-        if (isset($_POST['ajax']) && $_POST['ajax'] === 'post-form') {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'lists-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }

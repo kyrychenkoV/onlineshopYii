@@ -32,26 +32,19 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'id_lists'); ?>
 
-        <?php echo $form->dropDownList($model,'id_lists',Lists::getNameLists()); ?>
+        <?php echo $form->dropDownList($model,'id_lists',Lists::getNameLists(),array('empty' => '(Select a list)')); ?>
 
 		<?php echo $form->error($model,'id_lists'); ?>
 	</div>
 	<div class="row">
         <?php echo $form->labelEx($model,'image'); ?>
+        <?php
+        if($model->image) {
+            echo CHtml::image(Post::PATH_TO_IMAGE . $model->image, 'image', ['width' => '100px', 'height' => '100px']);
+        }?>
+        <br>
         <?php echo $form->fileField($model,'image'); ?>
 		<?php echo $form->error($model,'image'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'date_create'); ?>
-		<?php echo $form->textField($model,'date_create'); ?>
-		<?php echo $form->error($model,'date_create'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'last_status_change'); ?>
-		<?php echo $form->textField($model,'last_status_change'); ?>
-		<?php echo $form->error($model,'last_status_change'); ?>
 	</div>
 
 	<div class="row buttons">

@@ -27,13 +27,23 @@ class IndexPageController extends Controller
 
     }
 
-    public function actionShow()
+    public function actionShow($id)
     {
-        echo(__METHOD__);
+        $this->render('show', [
+            'data' => $this->loadModel($id),
+        ]);
 
-        return $this->render('show');
 
+    }
 
+    public function loadModel($id)
+    {
+        $model = Post::model()->findByPk($id);
+        if ($model === null) {
+            throw new CHttpException(404, 'The requested page does not exist.');
+        }
+
+        return $model;
     }
 
 
